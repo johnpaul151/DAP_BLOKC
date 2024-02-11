@@ -58,7 +58,7 @@ function App() {
   
 
   const [message, setMessage] = useState("");
-  const [currentGreeting, setCurrentGreeting] = useState("");
+  const [currentGreeting] = useState("");
 
   async function requestAccount() {
     await window.ethereum.request({ method: "eth_requestAccounts" });
